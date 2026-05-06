@@ -21,6 +21,7 @@ El objetivo de este repositorio es el de desarrollar un flujo de trabajo automá
 
 # Estructura del repositorio
 
+```
 ├── data/
 │ ├── raw/ # Datos de entrada (Genomas alineados)
 │ ├── processed/ # Reasultados de los distintos análisis
@@ -40,6 +41,7 @@ El objetivo de este repositorio es el de desarrollar un flujo de trabajo automá
 ├── enviroment.yml # Entorno reproducible
 ├── README.md
 ├── LICENSE
+```
 
 ***
 
