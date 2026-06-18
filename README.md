@@ -37,7 +37,9 @@ El objetivo de este repositorio es el de desarrollar un flujo de trabajo automá
 │ │ ├── post_filt/ # Estadísticas de las variantes después del filtrado
 │ ├── tables_var/ # Tablas procesadas con todas las variantes anotadas
 │ ├── tables_mut/ # Tablas procesadas con las variantes que tienen una frecuencia inferior a 1%
+│ ├── recurrent_var/ # Tabla con las 100 variantes con mayor frecuencia entre las muestras
 ├── command_scripts/ # Scripts del pipeline
+├── python_scripts/ # Scripts de python para la priorizacion
 ├── enviroment.yml # Entorno reproducible
 ├── README.md
 ├── LICENSE
@@ -80,6 +82,10 @@ bash command_scripts/06_anotacion_VEP.sh
  ```bash
    bash command_scripts/07_tablas_resultado.sh
  ```
+ 8. Análisis de frecuencia de variantes entre muestras
+ ```bash
+   python3 python_scripts/variant_frequency_analysis.py
+ ```
 
 ***
 
@@ -91,6 +97,7 @@ bash command_scripts/06_anotacion_VEP.sh
 - Archivo_anotado.vcf -> variantes anotadas con VEP
 - Tabla_variantes.tsv -> tablas de resultados
 - Tabla_mutaciones.tsv -> variantes con frecuencia <1%
+- Variantes_mayorFreq.tsv -> tabla con las 100 variantes con mayor frecuencia entre muestras
 
 ***
 
