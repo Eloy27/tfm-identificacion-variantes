@@ -1,8 +1,0 @@
-name: tfm
-channels:
-  - conda-forge
-  - bioconda
-  - defaults
-dependencies:
-  - samtools
-prefix: /home/Eloy27/miniconda3/envs/tfm
