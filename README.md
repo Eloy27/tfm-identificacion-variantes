@@ -16,6 +16,7 @@ El objetivo de este repositorio es el de desarrollar un flujo de trabajo automá
 - *VEP de Ensembl*: Usado en el proceso de anotación funcional
 - *SAMtools* y *BCFtools*: Utilizados para la generación de índices de archivos FASTA y manipulación y filtrado de archivos VCF
 - *Docker*: Necesario para la ejecución de DeepVariant y VEP
+- *Python*: Usado para ordenar las variantes en función de su recurrencia y generar representaciones gráficas
 
 ***
 
@@ -48,7 +49,7 @@ El objetivo de este repositorio es el de desarrollar un flujo de trabajo automá
 ***
 
 # Pipeline
-Los scripts necesarios para reproducir el pipeline se encuentran en la carpeta 'command_scripts/'. Estos están numerados para asegurar su ejecución en el orden correcto.
+Los scripts necesarios para reproducir el pipeline se encuentran en la carpeta 'command_scripts/' y 'python_scripts/'. Estos están numerados para asegurar su ejecución en el orden correcto.
 Antes de ejecutarlos, es necesario crear el entorno de Conda utilizando el archivo environment.yml incluido en el repositorio, ya que algunos pasos requieren herramientas previamente instaladas, como BCFtools.
 
 ### Flujo general
@@ -112,7 +113,8 @@ El pipeline consigue identificar un elevado número de variantes genéticas en d
 - BCFtools (Danecek et al., 2021)
 - Ensembl Genome Browser (Yates et al., 2020)
 - UCSC Genome Browser (Kent et al., 2002)
-- Docker (Docker Inc., https://www.docker.com/)
+- Docker. https://www.docker.com/
+- Python. Python Software Foundation. https://www.python.org/
 
 ***
 
